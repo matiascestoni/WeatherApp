@@ -1,0 +1,6 @@
+ext {
+    BASE_WEATHER_URL="http://api.apixu.com/v1/"
+    BASE_GEONAME_URL="http://api.geonames.org/"
+    GEONAME_API_KEY="matias_cestoni"
+    WEATHER_API_KEY="f701847e27474920ad9160748181512"
+}

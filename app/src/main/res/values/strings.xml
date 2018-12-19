@@ -1,0 +1,17 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">WeatherApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="type_the_name_of_the_city">Type the name of the City</string>
+    <string name="null_content_description">Null content description</string>
+    <string name="no_city_selected">No City  selected</string>
+    <string name="city_not_found">Could not find the city</string>
+    <string name="error_retrieving_weather">Error retrieving weather</string>
+    <string name="flag_base_url">"https://www.countryflags.io/%1$s/shiny/64.png"</string>
+
+    <!-- Forecast -->
+    <string name="temperature_plus">+%.1f <xliff:g id="unit">%2$s</xliff:g></string>
+    <string name="temperature_minus">%.1f <xliff:g id="unit">%2$s</xliff:g></string>
+    <string name="format_wind">Wind:<xliff:g id="speed">1%.0f</xliff:g> <xliff:g id="unit">%2$s</xliff:g>, <xliff:g id="dir">%3$s</xliff:g></string>
+    <string name="format_pressure">Pressure: %.0f <xliff:g id="pressure">%2$s</xliff:g></string>
+    <string name="format_humidity">Humidity: %d%%</string>
+</resources>

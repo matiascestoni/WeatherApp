@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/weather_state"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/null_content_description" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/max_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/primary_text_margin"
+            android:layout_marginTop="@dimen/subtext_size_bottom_padding"
+            android:layout_marginRight="@dimen/primary_text_margin"
+            android:layout_marginBottom="@dimen/subtext_size_bottom_padding"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/temp_text_size"
+            tools:text="+12C" />
+
+        <TextView
+            android:id="@+id/min_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/primary_text_margin"
+            android:layout_marginTop="@dimen/subtext_size_bottom_padding"
+            android:layout_marginRight="@dimen/primary_text_margin"
+            android:layout_marginBottom="@dimen/subtext_size_bottom_padding"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/temp_text_size"
+            tools:text="+2C" />
+
+        <TextView
+            android:id="@+id/visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/primary_text_margin"
+            android:layout_marginTop="@dimen/subtext_size_bottom_padding"
+            android:layout_marginRight="@dimen/primary_text_margin"
+            android:layout_marginBottom="@dimen/subtext_size_bottom_padding"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/subtext_size" />
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/primary_text_margin"
+            android:layout_marginRight="@dimen/primary_text_margin"
+            android:layout_marginBottom="@dimen/subtext_size_bottom_padding"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/subtext_size"
+            tools:text="85% humidity" />
+
+    </LinearLayout>
+
+</LinearLayout>
